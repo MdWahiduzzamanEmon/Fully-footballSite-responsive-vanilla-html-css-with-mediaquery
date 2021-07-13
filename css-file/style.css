@@ -160,3 +160,41 @@ header{
 
 
 /* --------------------------- header section end --------------------------- */
+
+/* ----------------------------- article section ---------------------------- */
+
+.player-blog{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    width: 65.625rem;
+    margin: 0 auto;
+    margin-top: 4.375rem;
+    grid-column-gap: 1.875rem;
+}
+.players{
+    width: 20.625rem;
+    height: 29.625rem;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+    margin-bottom: 1.6875rem;
+    
+}
+.player-img{
+    margin: .9375rem;
+}
+.players .player-img img{
+    width: 18.75rem;
+    height: 16rem;
+    
+}
+.player-name{
+    font-size: 1.75rem;
+    margin-top: 1rem;
+    margin-bottom: .625rem;
+}
+.player-details{
+    color: #6C6C6C;
+    line-height: 1.625rem;
+    font-size: 1rem;
+}
+
+/* --------------------------- article section end -------------------------- */

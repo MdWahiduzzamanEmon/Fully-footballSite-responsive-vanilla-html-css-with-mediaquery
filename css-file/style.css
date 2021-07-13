@@ -343,19 +343,20 @@ footer{
 }
 .social-icons a .fa-facebook:hover{
     color:#4169e1;
-    
+    transition: all .3s;
+
 }
 .social-icons a .fa-instagram-square:hover{
     color:#c71585;
-    
+    transition: all .3s;
 }
 .social-icons a .fa-youtube:hover{
     color:#ff0000;
-    
+    transition: all .3s;
 }
 .social-icons a .fa-linkedin:hover{
     color:#153cb3;
-    
+    transition: all .3s;
 }
 .footer-section p{
     font-size: 1.125rem;

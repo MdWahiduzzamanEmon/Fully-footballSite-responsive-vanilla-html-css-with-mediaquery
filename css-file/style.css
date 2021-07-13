@@ -306,6 +306,7 @@ textarea#text:hover{
     color: #fff;
     transition: all .5s ease;
     border: none;
+    cursor: pointer;
 
 }
 .submit-btn:hover{

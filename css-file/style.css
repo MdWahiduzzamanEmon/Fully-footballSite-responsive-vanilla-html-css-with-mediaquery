@@ -20,8 +20,7 @@ html{
     --header-bg-color:#2D25A0;
     --small-p-color:#6C6C6C;
     --name-color:#18191F;
-    --button-color:#C73866;
-    --button-hover-color:#bd460f;
+    --button-color:#101f46;
 }
 
 .wrapper{
@@ -171,6 +170,7 @@ header{
 .player-img{
     margin: .9375rem;
 }
+
 .players .player-img img{
     width: 18.75rem;
     height: 16rem;
@@ -228,6 +228,13 @@ header{
 .right-part img{
     width: 35.4375rem;
     height: 26.6875rem;
+    transition: transform .3s;
+    cursor: wait;
+    border-radius: .625rem;
+}
+.right-part img:hover{
+   transform: scale(1.1);
+ 
 }
 /* --------------------------- another section end -------------------------- */
 /* ------------------------------ extra section ----------------------------- */
@@ -299,10 +306,59 @@ textarea#text:hover{
     color: #fff;
     transition: all .5s ease;
     border: none;
-    padding: 1.25rem 1.5rem;
+
 }
 .submit-btn:hover{
     background-image:linear-gradient(to right,#44a3f1c4,#1100ffb0);
     color: #18191F;
 }
 /* ---------------------------- extra section end --------------------------- */
+
+
+/* --------------------------------- footer --------------------------------- */
+
+footer{
+    margin-top: 9.875rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.footer-section{
+    width: 30.241875rem;
+    height: 13.3125rem;
+}
+.footer-section img{
+    width: 30.241875rem;
+    height:6.875rem;
+}
+.social-icons{
+    padding: 1.25rem 0;
+}
+.social-icons a{
+    color:#969BAB;
+    font-size: 1.375rem;
+    padding: 0.625rem 0.3125rem;
+    
+}
+.social-icons a .fa-facebook:hover{
+    color:#4169e1;
+    
+}
+.social-icons a .fa-instagram-square:hover{
+    color:#c71585;
+    
+}
+.social-icons a .fa-youtube:hover{
+    color:#ff0000;
+    
+}
+.social-icons a .fa-linkedin:hover{
+    color:#153cb3;
+    
+}
+.footer-section p{
+    font-size: 1.125rem;
+}
+
+/* --------------------------- footer section end --------------------------- */

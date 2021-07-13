@@ -1,0 +1,162 @@
+/* common css start*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    /* background: #111111; */
+}
+
+html{
+    font-size: 100%;
+    scroll-behavior: smooth;
+}
+
+:root{
+    --header-bg-color:#2D25A0;
+    --small-p-color:#6C6C6C;
+    --name-color:#18191F;
+    --button-color:#C73866;
+    --button-hover-color:#bd460f;
+}
+
+.wrapper{
+    max-width: 72.5rem;
+    margin: 0 auto;
+}
+li{
+    list-style: none;
+}
+a{text-decoration: none;}
+/* common css end */
+
+
+
+/* -------------------------- header section start -------------------------- */
+header{
+    background-color: var(--header-bg-color);
+    height: 42.3125rem;
+}
+.nav-bar-section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 2.625rem ;
+}
+.nav-bar-section ul {
+    display: flex;
+}
+.nav-bar-section ul li{
+    margin-right: 2.25rem;
+}
+.nav-bar-section ul li a{
+    color: #fff;
+}
+.nav-bar-section ul li a:hover{
+    border-bottom: 1px solid #fff;
+    transition: all .3s ;
+}
+
+.login-btn button{
+    Width: 7.6875rem;
+    Height: 2.75rem;
+    Padding:0.625rem, 1.5rem, 0.625rem, 1.5rem;
+    background-color: var(--button-color);
+    color: #fff;
+    border: none;
+    transition: all .5s ease;
+    cursor: pointer;
+   
+}
+.login-btn button:hover{
+    background-image:linear-gradient(to right,#44a3f1c4,#1100ffb0);
+    color: #18191F;
+
+}
+.fa-sign-in-alt{
+    margin-right: .5rem;
+}
+
+.header-flex-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3.0625rem;
+}
+.left-content{
+    width: 30.3125rem;
+    margin-right: 6.375rem;
+}
+.left-content h1{
+    font-size: 4rem;
+    line-height: 5rem;
+    color: #fff;
+    text-shadow: 0px 15px 12px rgba(255, 255, 255, 0.219);
+
+}
+.arrow-btn{
+    width: 10.5rem;
+    height: 2.75rem;
+    padding: 0.625rem, 1.5rem, 0.625rem, 1.5rem;
+    margin-top: 1.6875rem;
+    font-weight: 500;
+    background-color: var(--button-color);
+    color: #fff;
+    border: none;
+    transition: all .5s ease;
+    cursor: pointer;
+    font-weight: 600;
+}
+.arrow-btn:hover{
+    background-image:linear-gradient(to right,#44a3f1c4,#1100ffb0);
+    color: #18191F;
+
+}
+.fa-arrow-right{
+    margin-left: .5rem;
+}
+.right-img img{
+    width: 34.750625rem;
+    height: 27.375rem;
+}
+
+/* ----------------------------- animation part start----------------------------- */
+.animation{
+    animation-name:bounce;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes bounce {
+    0%{
+        transform: translateX(0);
+        -webkit-transform: translateX(0);
+        -moz-transform: translateX(0);
+        -ms-transform: translateX(0);
+        -o-transform: translateX(0);
+}
+    50%{
+        transform: translateX(50px);
+        -webkit-transform: translateX(50px);
+        -moz-transform: translateX(50px);
+        -ms-transform: translateX(50px);
+        -o-transform: translateX(50px);
+}
+    100%{
+        transform: translateX(0);
+        -webkit-transform: translateX(0);
+        -moz-transform: translateX(0);
+        -ms-transform: translateX(0);
+        -o-transform: translateX(0);
+}
+}
+
+/* --------------------------- animation part end --------------------------- */
+
+
+/* --------------------------- header section end --------------------------- */

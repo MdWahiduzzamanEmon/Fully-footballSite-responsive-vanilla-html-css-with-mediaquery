@@ -238,7 +238,77 @@ header{
    transform: scale(1.1);
  
 }
+
 /* --------------------------- another section end -------------------------- */
+
+
+ /* ---------------------------- fixed social menu --------------------------- */
+.social-icon-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: fixed;
+    top: 35.3125rem;
+    width: 4%;
+    height: 22vh;
+    border-radius: 0px 20px;
+    background-color: black;
+    align-items: center;
+    opacity: 0.5;
+    border-right: 4px solid orange ;
+    
+}
+.social-icon-menu:hover{
+    opacity: 1;
+    transition: all .4s;
+   cursor: pointer;
+}
+.social-icon-menu a{
+    color: #fff;
+    font-size: 1.2rem;
+    line-height: 2;
+}
+
+.social-icon-menu a .fa-facebook{
+    color:#4169e1;
+
+}
+.social-icon-menu a .fa-instagram-square{
+    color:#c71585;
+}
+.social-icon-menu a .fa-youtube{
+    color:#ff0000;
+
+}
+.social-icon-menu a .fa-linkedin{
+    color:#153cb3;
+
+}
+.social-icon-menu a .fa-facebook:hover{
+    transition: all .3s;
+    transform: scale(2.5);
+
+}
+.social-icon-menu a .fa-instagram-square:hover{
+    transform: scale(2.5);
+    transition: all .3s;
+}
+.social-icon-menu a .fa-youtube:hover{
+    transform: scale(2.5);
+    transition: all .3s;
+}
+.social-icon-menu a .fa-linkedin:hover{
+    transition: all .3s;
+    transform: scale(2.5);
+}
+
+
+
+/* -------------------------- fixed social menu end ------------------------- */
+
+
+
+
 /* ------------------------------ extra section ----------------------------- */
 
 .live-show{
@@ -384,6 +454,126 @@ label #btn,label #cancel{
 
 /* ----------------------------- responsive part start---------------------------- */
 
+
+
+
+
+/* ------------------------------- for tablet ------------------------------- */
+
+@media only screen and (min-width:689px) and (max-width:968px) {
+    .wrapper{
+        max-width: 100%;
+    }
+
+    /* header */
+    header{
+        height: 33.3125rem;
+    }
+    .nav-bar-section{
+        justify-content: space-evenly;
+    }
+    .left-content {
+        width: 10.3125rem;
+        margin-right: 5.375rem;
+    }
+    .left-content h1 {
+        font-size: 3rem;
+        line-height: 4rem;
+    }
+    .right-img img {
+        width: 26.750625rem;
+        height: 20.375rem;
+    }
+
+
+    @keyframes bounce {
+        0%{
+            transform: translateX(0);
+        }
+        50%{
+            transform: translateX(30px);
+    
+}
+        100%{
+            transform: translateX(0);
+           
+    }
+    }
+
+    /* blog */
+
+    .player-blog{
+        grid-template-columns: repeat(2,1fr);
+        width: 100%;
+    }
+
+    /* hightlight */
+
+    .match-highlight {
+        margin-top: 3.3125rem;
+    }
+    .left-part{
+        width: 40%;
+        height: ;
+    }
+    .left-part h1 {
+        font-size: 2rem;
+        line-height: 2.75rem;
+        margin-bottom: .5rem;
+    }
+    .right-part img {
+        width: 20.4375rem;
+        height: 16.6875rem;
+        transition: transform .3s;
+        cursor: wait;
+        border-radius: .625rem;
+    }
+    .live-show{
+        margin-top: 2.875rem;
+    }
+    .live{
+        width: 40%;
+    }
+    .live h1{
+        font-size: 2rem;
+    }
+
+    .live iframe {
+        width: 100%;
+        height: auto;
+        box-shadow: 0rem 1.25rem 1.25rem -0.375rem silver;
+        margin-right: 0;
+    }
+
+    .vote-section{
+        width: 40%;
+        margin-left: 5.9375rem;
+    }
+    textarea#text{
+        margin-left: 0;
+    }
+
+    footer{
+        margin-top: 3.875rem;
+        margin-bottom: 1.875rem;
+    }
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+/* ------------------------------- for mobile ------------------------------- */
+
 @media only screen and (max-width:688px) {
     .wrapper{
         max-width: 100%;
@@ -457,18 +647,22 @@ label #btn,label #cancel{
 
 
     @keyframes bounce {
-        0%{
-            transform: translateY(0);
-        
-}
-        50%{
-            transform: translateY(30px);
-           
-}
-        100%{
-            transform: translateY(0);
-           
-}
+            0%{
+                transform: translateY(0);
+            
+    }
+            50%{
+                transform: translateY(30px);
+            
+    }
+            100%{
+                transform: translateY(0);
+            
+    }
+    }
+
+    .social-icon-menu{
+        display: none;
     }
   
     /* blog */
@@ -537,24 +731,20 @@ label #btn,label #cancel{
         display: inline;
        
     }
+    /* footer */
 
-
-
-
-/* footer */
-
-footer{
-    margin-top: 5.6875rem;
-}
-.footer-section img{
-    width: 17.375rem;
-    height: 3.9375rem;
-    margin-bottom: 0.8125rem;
-}
-.social-icons{
-    padding: 0;
-    margin-bottom: 1.25rem;
-}
+    footer{
+        margin-top: 5.6875rem;
+    }
+    .footer-section img{
+        width: 17.375rem;
+        height: 3.9375rem;
+        margin-bottom: 0.8125rem;
+    }
+    .social-icons{
+        padding: 0;
+        margin-bottom: 1.25rem;
+    }
 
 
 

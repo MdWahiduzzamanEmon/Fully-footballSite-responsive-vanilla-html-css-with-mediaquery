@@ -38,6 +38,7 @@ a{text-decoration: none;}
 header{
     background-color: var(--header-bg-color);
     height: 42.3125rem;
+    
 }
 .nav-bar-section{
     display: flex;

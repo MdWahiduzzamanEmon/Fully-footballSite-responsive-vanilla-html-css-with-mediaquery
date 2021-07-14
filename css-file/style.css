@@ -166,8 +166,15 @@ header{
     height: 29.625rem;
     box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
     margin-bottom: 1.6875rem;
-    
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+.flex-wrap{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    }
 .player-img{
     margin: .9375rem;
 }
@@ -460,7 +467,7 @@ label #btn,label #cancel{
 
 /* ------------------------------- for tablet ------------------------------- */
 
-@media only screen and (min-width:689px) and (max-width:968px) {
+@media only screen and (min-width:689px) and (max-width:1024px) {
     .wrapper{
         max-width: 100%;
     }
@@ -540,7 +547,6 @@ label #btn,label #cancel{
 
     .live iframe {
         width: 100%;
-        height: auto;
         box-shadow: 0rem 1.25rem 1.25rem -0.375rem silver;
         margin-right: 0;
     }
@@ -550,6 +556,7 @@ label #btn,label #cancel{
         margin-left: 5.9375rem;
     }
     textarea#text{
+        width: 100%;
         margin-left: 0;
     }
 

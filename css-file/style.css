@@ -366,6 +366,18 @@ footer{
 /* --------------------------- footer section end --------------------------- */
 
 
+/* mobile nav-bar */
+input[type="checkbox"]{
+    display: none;
+}
+label #btn,label #cancel{
+    margin-left: 1rem;
+    color: #fff;
+    font-size: 1.5rem;
+    display: none;
+    cursor: pointer;
+}
+
 
 
 /* ----------------------------- responsive part start---------------------------- */
@@ -382,8 +394,41 @@ footer{
      .nav-bar-section{
          padding-top: 2.0625rem;
      }
-    .nav-bar-section ul{
+     .nav-bar-section ul li{
+         margin-right: 0;
+     }
+
+     /* mobile menu */
+      label #btn{
+         display: block;
+     }
+         ul{
+            flex-direction: column;
+            position: fixed;
+            line-height: 4;
+            top: 60px;
+            left: -100%;
+            z-index: 50;
+            width: 100%;
+            height: 45vh;
+            background-color: var(--button-color);
+            text-align: center;
+            transition: .7s all;
+    }
+         
+         #check:checked ~ ul{
+            left: 0px;
+      }
+       input[type="checkbox"]:checked ~ label #btn{
         display: none;
+       }
+       input[type="checkbox"]:checked ~ label #cancel{
+         display: block;
+       }
+
+     /* mobile menu */
+    .login-btn button{
+        margin-right: 1.31375rem;
     }
     .header-flex-section {
         flex-direction: column;
@@ -471,6 +516,7 @@ footer{
         font-size: 1.875rem;
         line-height: 2.5rem;
     }
+    
     .live iframe {
         width: 15.3125rem;
         height: 13.3125rem;
@@ -480,6 +526,9 @@ footer{
     .vote-section h2{
         font-size: 1.875rem;
         line-height: 2.5rem;
+    }
+    .vote-section .radio {
+        width: 7.75rem;
     }
     textarea#text {
         margin-left: .375rem;

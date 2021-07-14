@@ -364,3 +364,161 @@ footer{
 }
 
 /* --------------------------- footer section end --------------------------- */
+
+
+
+
+/* ----------------------------- responsive part start---------------------------- */
+
+@media only screen and (max-width:688px) {
+    .wrapper{
+        max-width: 100%;
+    }
+
+    /* header */
+     header{
+         height: 43.4375rem;
+     }
+     .nav-bar-section{
+         padding-top: 2.0625rem;
+     }
+    .nav-bar-section ul{
+        display: none;
+    }
+    .header-flex-section {
+        flex-direction: column;
+        align-items:center;
+        padding-left: .9375rem;
+    }
+    .left-content{
+        width: 17.375rem;
+        height: 10.5rem;
+        margin-left: 1rem;
+    }
+    .left-content h1{
+        font-size: 2.25rem;
+        line-height: 3.125rem;
+    }
+    .right-img{
+        margin-top: 5.625rem;
+    }
+    .right-img img{
+        width: 20.5625rem;
+        height: 16.1981rem;
+       
+    }
+
+
+    @keyframes bounce {
+        0%{
+            transform: translateY(0);
+        
+}
+        50%{
+            transform: translateY(30px);
+           
+}
+        100%{
+            transform: translateY(0);
+           
+}
+    }
+  
+    /* blog */
+
+    .player-blog{
+        display: flex;
+        flex-direction: column;
+        width: 20.625rem;
+        margin-top: 2.9375rem;
+    }
+
+    /* another section */
+
+    .match-highlight{
+        flex-direction: column;
+        margin-left: 0rem;
+        margin-top: 3.75rem;
+        padding: .625rem;
+    }
+    .left-part{
+        width: 100%;
+        height: 18.6875rem;
+        margin-right: 0;
+    }
+    .left-part h1{
+        font-size: 1.875rem;
+        line-height: 2.5rem;
+        font-weight: 700;
+    }
+
+
+    .right-part img{
+        width: 100%;
+        height: 100%;
+        margin-top: 1.8125rem;
+    }
+
+    /* live show */
+    .live-show{
+        flex-direction: column;
+        margin-top: 3.75rem;
+    }
+    .live {
+        height: 22.6875rem;
+    }
+    .live h1{
+        font-size: 1.875rem;
+        line-height: 2.5rem;
+    }
+    .live iframe {
+        width: 15.3125rem;
+        height: 13.3125rem;
+        margin-right: 0;
+        margin-left: 1.75rem;
+    }
+    .vote-section h2{
+        font-size: 1.875rem;
+        line-height: 2.5rem;
+    }
+    textarea#text {
+        margin-left: .375rem;
+        display: inline;
+       
+    }
+
+
+
+
+/* footer */
+
+footer{
+    margin-top: 5.6875rem;
+}
+.footer-section img{
+    width: 17.375rem;
+    height: 3.9375rem;
+    margin-bottom: 0.8125rem;
+}
+.social-icons{
+    padding: 0;
+    margin-bottom: 1.25rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
